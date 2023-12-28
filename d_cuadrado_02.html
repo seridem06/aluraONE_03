@@ -1,0 +1,65 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function dibujarCuadrado(x,y,color){
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x,y,50,50);
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x,y,50,50);
+    }
+
+    
+
+    
+    /*
+    //pincel.fillStyle = "green";
+    pincel.fillRect(50,0,50,50);
+    //pincel.strokeStyle = "black";
+    pincel.strokeRect(50,0,50,50);
+
+    pincel.fillRect(100,0,50,50);
+    pincel.strokeRect(100,0,50,50);
+
+    pincel.fillRect(150,0,50,50);
+    pincel.strokeRect(150,0,50,50);
+
+    pincel.fillRect(200,0,50,50);
+    pincel.strokeRect(200,0,50,50);
+
+    pincel.fillStyle = "lightgreen";
+    pincel.fillRect(0,50,50,50);
+    pincel.strokeRect(0,50,50,50);
+    */
+
+    dibujarCuadrado(0,0,"red");
+    dibujarCuadrado(0,50,"yellow");
+    dibujarCuadrado(0,100,"green");
+    dibujarCuadrado(0,150,"pink");
+    dibujarCuadrado(0,200,"lightblue");
+
+    dibujarCuadrado(50,0,"black");
+    dibujarCuadrado(50,50,"white");
+    dibujarCuadrado(50,100,"black");
+    dibujarCuadrado(50,150,"white");
+    dibujarCuadrado(50,200,"black");
+
+
+     function dibujarCuadradoA(x,y,color){
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x,y,250,250);
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x,y,250,250);
+    }
+
+    dibujarCuadradoA(100,0,"purple");
+    
+</script>    

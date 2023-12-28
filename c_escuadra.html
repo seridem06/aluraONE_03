@@ -1,0 +1,24 @@
+<!-- escuadra.html -->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle='black'; //triangulo recto negro
+    pincel.beginPath();
+    pincel.moveTo(50, 50);//parte izq arriba
+    pincel.lineTo(50, 400);//base izq abajo
+    pincel.lineTo(400, 400);//base der abajo
+    pincel.fill();
+
+    pincel.fillStyle='white'; //triangulo recto blanco
+    pincel.beginPath();
+    pincel.moveTo(100, 175); //parte izq arriba
+    pincel.lineTo(100, 350);  //base izq abajo
+    pincel.lineTo(275, 350);    //base der abajo
+    pincel.fill();
+
+
+</script> 
